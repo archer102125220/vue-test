@@ -10,7 +10,6 @@ export default {
   name: "App",
   computed: {
     layout() {
-      console.log(this.$store.state);
       return this.$route.meta.layout || default_layout;
     }
   }
