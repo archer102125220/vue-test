@@ -1,19 +1,27 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./../assets/logo.png" />
+    <h2>這裡是routes</h2>
+    <HelloWorld msg="components's msg form routes : HelloWorld" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./../components/HelloWorld.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
     HelloWorld
+  },
+  computed: {
+    count() {
+      console.log(this.$store.state);
+      // return this.$store.state;
+      return null;
+    }
   }
-}
+};
 </script>
 
 <style>
