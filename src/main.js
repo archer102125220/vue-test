@@ -1,8 +1,10 @@
 import Vue from 'vue';
 import models from './models/index';
-import App from './App.vue';
+import App from './App';
 import router from './router';
 import GlobalLayout from "./layouts/GlobalLayout";
+
+// Vue.use(Vuex);
 
 Vue.component("GlobalLayout", GlobalLayout);
 Vue.config.productionTip = false;
