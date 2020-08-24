@@ -5,9 +5,9 @@
 </template>
 
 <script>
-const default_layout = "GlobalLayout";
+const default_layout = 'GlobalLayout';
 export default {
-  name: "App",
+  name: 'App',
   computed: {
     layout() {
       return this.$route.meta.layout || default_layout;

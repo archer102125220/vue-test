@@ -1,18 +1,22 @@
-import { GET_userList, /*SOCKET_UserList*/ } from './../services/userList';
+// import { GET_userList, /*SOCKET_UserList*/ } from './../services/userList';
 
 export default {
+
+    namespace:'userList',
+
     state: {
-        users: [1]
+        users: []
     },
     actions: { //等於dvajs的effects
-        *GET_UserList({ payload }, { call, put }) {  // eslint-disable-line
-            const data = yield call(GET_userList);
-            yield put({ type: 'set_user_list', payload: data });
+        *GET_UserList({ commit }, payload) {  // eslint-disable-line
+            // const data = yield GET_userList();
+            yield commit('set_user_list', payload);
         },
     },
     mutations: { //等於dvajs的reducers
-        set_user_list(state, { payload }) {
-            return { ...state, userList: payload };
+        set_user_list(state, payload) {
+            state = { ...state, users: payload };
+            // return { ...state, users: payload };
         },
     }
 };
