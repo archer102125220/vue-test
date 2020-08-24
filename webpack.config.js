@@ -59,9 +59,6 @@ module.exports = {
                 loader: 'vue-loader',
             },
             // {
-            //     loader: 'vue-style-loader'
-            // },
-            // {
             //     loader: 'style-loader'
             // },
             // {
