@@ -18,11 +18,7 @@ export default {
     HelloWorld,
   },
   created: function () {
-    // this.fetchData();
-      console.log(this.$store);
-      console.log(this.$store.state);
-      //https://router.vuejs.org/guide/essentials/navigation.html
-      console.log(this.$router);
+    // this.testGetVuex();
   },
   watch: {
     // currentBranch: "fetchData",
@@ -42,6 +38,7 @@ export default {
       // 透過 testGetVuex 事件 來呼叫 Vuex
       console.log(this.$store);
       console.log(this.$store.state);
+      //https://router.vuejs.org/guide/essentials/navigation.html
       console.log(this.$router);
     },
   },
