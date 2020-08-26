@@ -11,7 +11,6 @@
 <script>
 import HelloWorld from "./../components/HelloWorld.vue";
 import log from "./../assets/logo.png";
-import "./indexPage.css";
 
 export default {
   name: "indexPage",
@@ -20,6 +19,10 @@ export default {
   },
   created: function () {
     // this.fetchData();
+      console.log(this.$store);
+      console.log(this.$store.state);
+      //https://router.vuejs.org/guide/essentials/navigation.html
+      console.log(this.$router);
   },
   watch: {
     // currentBranch: "fetchData",
@@ -39,6 +42,7 @@ export default {
       // 透過 testGetVuex 事件 來呼叫 Vuex
       console.log(this.$store);
       console.log(this.$store.state);
+      console.log(this.$router);
     },
   },
   data() {
@@ -46,3 +50,13 @@ export default {
   },
 };
 </script>
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>

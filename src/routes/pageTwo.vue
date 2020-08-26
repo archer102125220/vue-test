@@ -12,10 +12,10 @@
 <script>
 import HelloWorld from "./../components/HelloWorld.vue";
 import log from "./../assets/logo.png";
-import './pageTwo.css';
+import "./pageTwo.css";
 
 export default {
-  name: 'pageTwo',
+  name: "PageTwo",
   components: {
     HelloWorld,
   },
@@ -24,8 +24,7 @@ export default {
       // 透過 testGetVuex 事件 來呼叫 Vuex
       console.log(this.$store);
       console.log(this.$store.state);
-      console.log(this.$store.dispatch);
-      console.log(this.$store.dispatch('GET_UserList', [123]));
+      this.$store.dispatch("GET_UserList", [123]);
       //GET_ProductTypes: (payload, loading) => dispatch({ type: 'productTypes/GET_ProductTypes', payload, loading }),
     },
   },

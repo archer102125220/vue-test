@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import indexPage from './routes/indexPage';
-import pageTwo from './routes/pageTwo';
+import PageTwo from './routes/pageTwo';
 import { ValidationProvider } from 'vee-validate';
 Vue.use(VueRouter, ValidationProvider);
 
@@ -18,13 +18,15 @@ const routes = [{
     meta: {
         layout: 'GlobalLayout'
     },
-    component: pageTwo
+    component: PageTwo
 },
 { path: '/index', redirect: '/' }
 ];
 
+//https://www.itread01.com/article/1532399388.html
+
 const router = new VueRouter({
-    mode: 'history',
+    mode: 'hash',
     base: '/',
     routes
 });

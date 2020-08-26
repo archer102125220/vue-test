@@ -8,14 +8,14 @@ export default {
         post: []
     },
     actions: { //等於dvajs的effects
-        *GET_PostData({ commit }, payload) {  // eslint-disable-line
-            const data = yield GET_userList();
-            yield commit('set_post_data', data);
+        async GET_PostData({ commit }, payload) {  // eslint-disable-line
+            const data = await GET_userList();
+            await commit('set_post_data', data);
         },
     },
     mutations: { //等於dvajs的reducers
         set_post_data(state, payload) {
-            state = { ...state, post: payload };
+            state.post = payload;
             // return { ...state, users: payload };
         },
     }

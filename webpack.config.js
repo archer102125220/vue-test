@@ -6,6 +6,7 @@ const dotenv = require('dotenv').config({ path: __dirname + '/.env' });
 // const theme = require('./theme');
 
 module.exports = {
+    devtool: 'inline-source-map',
     entry: [
         './src/index.js'
     ],
@@ -58,15 +59,15 @@ module.exports = {
             use: [{
                 loader: 'vue-loader',
             },
-            // {
-            //     loader: 'style-loader'
-            // },
-            // {
-            //     loader: 'css-loader',
-            // },
-            // {
-            //     loader: 'less-loader',
-            // }
+                // {
+                //     loader: 'style-loader'
+                // },
+                // {
+                //     loader: 'css-loader',
+                // },
+                // {
+                //     loader: 'less-loader',
+                // }
             ]
         }, {
             test: /\.(js|jsx)$/,
