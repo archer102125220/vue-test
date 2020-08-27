@@ -17,7 +17,7 @@ export default {
   components: {
     HelloWorld,
   },
-  created: function () {
+  created: function() {
     // this.testGetVuex();
   },
   watch: {

@@ -2,7 +2,7 @@
   <div id="app">
     <img alt="Vue logo" :src="log" />
     <h2>這裡是routes</h2>
-    {{test}}
+    {{ test }}
     <HelloWorld msg="pageTwo: HelloWorld" />
     <button @click="testGetVuex()">測試 取得 Vuex 實體</button>
     <router-link to="/">Go to index</router-link>
