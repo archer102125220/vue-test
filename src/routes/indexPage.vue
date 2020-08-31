@@ -3,7 +3,7 @@
     <img alt="Vue logo" :src="log" />
     <h2>這裡是routes</h2>
     <HelloWorld msg="components's msg form routes : HelloWorld" />
-    <button @click="testGetVuex()">測試 取得 Vuex 實體</button>
+    <md-button class="md-dense md-raised md-primary" @click="testGetVuex()">測試 取得 Vuex 實體</md-button>
     <router-link to="/two">Go to two</router-link>
   </div>
 </template>
@@ -48,12 +48,12 @@ export default {
 };
 </script>
 <style>
-#app {
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
+} */
 </style>
