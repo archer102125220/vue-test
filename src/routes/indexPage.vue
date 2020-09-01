@@ -3,6 +3,7 @@
     <img alt="Vue logo" :src="log" />
     <h2>這裡是routes</h2>
     <HelloWorld msg="components's msg form routes : HelloWorld" />
+    <div>{{ test }}</div>
     <button @click="testGetVuex()">測試 取得 Vuex 實體</button>
     <router-link to="/two">Go to two</router-link>
   </div>
@@ -36,14 +37,17 @@ export default {
   methods: {
     testGetVuex() {
       // 透過 testGetVuex 事件 來呼叫 Vuex
-      console.log(this.$store);
-      console.log(this.$store.state);
+      // console.log(this.$store.state.userList.token);
       //https://router.vuejs.org/guide/essentials/navigation.html
-      console.log(this.$router);
+      // console.log(this.$router);
+      this.test = "987465132";
     },
   },
   data() {
-    return { log };
+    return {
+      log,
+      test: "123",
+    };
   },
 };
 </script>

@@ -2,13 +2,17 @@ import fetch from './../utils/request';
 // import Socket from './../utils/socket';
 
 
-export function GET_userList(payload = {}, token) {
-  return fetch('GET', '/api/userList', payload, {
+export function GET_userList(token) {
+  return fetch('GET', '/users', {}, {
     headers: {
       // eslint-disable-next-line no-useless-escape
       Authorization: token.replace(/\"/g, '')
     }
   });
+}
+
+export function GET_userLogin(payload = {}) {
+  return fetch('GET', '/users/login', payload);
 }
 
 // export function SOCKET_UserList(eventName = '') {

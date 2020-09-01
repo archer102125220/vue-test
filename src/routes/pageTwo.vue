@@ -22,9 +22,11 @@ export default {
   methods: {
     testGetVuex() {
       // 透過 testGetVuex 事件 來呼叫 Vuex
-      console.log(this.$store);
-      console.log(this.$store.state);
-      this.$store.dispatch("GET_UserList", [123]);
+      // console.log(this.$store);
+      // console.log(this.$store.state);
+      this.$store.dispatch("GET_UserList", {
+        payload: this.$store.state.userList.token,
+      });
       //GET_ProductTypes: (payload, loading) => dispatch({ type: 'productTypes/GET_ProductTypes', payload, loading }),
     },
   },

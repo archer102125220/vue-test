@@ -9,9 +9,9 @@
 <script>
 export default {
   name: "GlobalLayout",
-  props: {
-    users: Array,
-  },
+  // props: {
+  //   users: Array,
+  // },
 };
 </script>
 <style>

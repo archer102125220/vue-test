@@ -28,6 +28,12 @@ export default {
   computed: {
     layout() {
       // console.log(this.$route.meta.layout);
+      this.$store.dispatch("GET_userLogin", {
+        payload: {
+          account: "Marnie",
+          password: "Marnie",
+        },
+      });
       return this.$route.meta.layout || default_layout;
     },
   },
