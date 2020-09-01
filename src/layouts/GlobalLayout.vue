@@ -15,9 +15,9 @@ export default {
 };
 </script>
 <style>
-a {
+/* a {
   text-decoration: none;
-}
+} */
 
 body > span {
   text-align: center;

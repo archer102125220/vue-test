@@ -1,9 +1,13 @@
 import Vue from 'vue';
 import 'es6-promise/auto';
 import Vuex from 'vuex';
+import VueMaterial from 'vue-material';
 import App from './App';
 import router from './router';
 import GlobalLayout from './layouts/GlobalLayout';
+import 'vue-material/dist/vue-material.min.css';
+import 'vue-material/dist/theme/default.css';
+
 
 const plugins = [
   require('./models/userList').default,
@@ -12,7 +16,7 @@ const plugins = [
 
 Vue.component('GlobalLayout', GlobalLayout);
 
-
+Vue.use(VueMaterial);
 Vue.use(Vuex);
 Vue.config.performance = process.env.NODE_ENV === 'development';
 Vue.config.devtools = process.env.NODE_ENV === 'development';

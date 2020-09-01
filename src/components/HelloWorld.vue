@@ -1,7 +1,11 @@
 <template>
   <div class="hello">
-    <h2>這裡是components</h2>
-    <h1>{{ msg }}</h1>
+    <h2>這裡是components!!!!!!!!!!!!</h2>
+    <span class="md-display-1">{{ msg }}</span>
+    <span class="md-display-1">{{ msg }}</span>
+    <span class="md-display-1">{{ msg }}</span>
+    <span class="md-display-1">{{ msg }}</span>
+    <span class="md-display-1">{{ msg }}</span>
   </div>
 </template>
 

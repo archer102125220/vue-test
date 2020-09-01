@@ -12,7 +12,7 @@
 <script>
 import HelloWorld from "./../components/HelloWorld.vue";
 import log from "./../assets/logo.png";
-import "./pageTwo.css";
+// import "./pageTwo.css";
 
 export default {
   name: "PageTwo",
