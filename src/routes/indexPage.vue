@@ -12,6 +12,9 @@
 <script>
 import HelloWorld from "./../components/HelloWorld.vue";
 import log from "./../assets/logo.png";
+//https://cythilya.github.io/2017/04/15/vue-watch/
+//https://medium.com/pierceshih/vue-js-%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-day14-vue%E7%94%9F%E5%91%BD%E9%80%B1%E6%9C%9F-65bc934dfd47
+//https://www.jianshu.com/p/8642262f4403
 
 export default {
   name: "indexPage",
