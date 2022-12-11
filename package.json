@@ -28,7 +28,7 @@
     "less-loader": "^6.2.0",
     "lodash": "^4.17.20",
     "moment": "^2.27.0",
-    "qs": "^6.9.4",
+    "qs": "^6.9.7",
     "sass-loader": "^9.0.3",
     "socket.io-client": "^2.3.0",
     "style-loader": "^1.2.1",
